@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 let questions = [
-    { your bad
+    { 
         title: "capital of Mongolia",
         options:["Ulaanbaatar","Pyongyang","Seoul","London"],
         correct: 1
