@@ -9,14 +9,12 @@ module.exports = {
     description: "Test your knowledge!",
     category:"fun",
     run: async(bot, message, args, Discord)=>{
-        let q = questions[Math.floor(Math.random()*(questions.length))]
-        let i = 0;
+        
+        var input = args[0];
+        
         const Embed = new Discord.MessageEmbed()
         .setTitle(q.title)
-        .setDescription(q.options.map(opt=>{
-            i++;
-            return `${i} - ${opt}\n`
-        }))
+        .setDescription(input)
         .setColor(`GREEN`)
         .setFooter(`Reply to this message with the correct question number! You have 15 seconds.`)
         message.channel.send(Embed)
