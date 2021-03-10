@@ -1,15 +1,8 @@
 let questions = [
     {
-        title: "capital of Mongolia",
-        options:["Ulaanbaatar","Pyongyang","Seoul","London"],
-        correct: 1
-    },
-{
-    title: "Capital of italy",
-    options: ["Croatia","venice","milan","Rome"],
-    correct: 4
-
-}
+        title: "capital of England",
+        answer: "London"
+    }
 ];
 module.exports = {
     name: 'Trivia',
